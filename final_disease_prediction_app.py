@@ -1,3 +1,9 @@
+import warnings
+# Suppress non-fatal version mismatch warnings from scikit-learn/xgboost.
+# These occur when the deployment environment has a slightly different patch
+# version than what was used during training. Long-term fix: retrain models.
+warnings.filterwarnings("ignore", category=UserWarning)
+
 import streamlit as st
 import pandas as pd
 import numpy as np
