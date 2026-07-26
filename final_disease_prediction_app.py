@@ -15,7 +15,7 @@ models = {
 # Load training data to get the list of symptoms
 train_data = pd.read_csv('Augmented_Data.csv')
 X_train = train_data.drop(columns=['prognosis'])
-symptoms = X_train.colum
+symptoms = X_train.columns
 # Streamlit app
 st.title("Disease Prediction Based on Symptoms")
 
