@@ -3,17 +3,17 @@ import pandas as pd
 import numpy as np
 import joblib
 
-# Loading all trained models
+# Loading all trained models from the models/ directory
 models = {
-    "Decision Tree": joblib.load('final_model1.joblib'),
-    "Random Forest": joblib.load('final_model2.joblib'),
-    "XGBoost": joblib.load('final_model3.joblib'),
-    "K-Nearest Neighbors (KNN)": joblib.load('final_model4.joblib'),
-    "MLP Neural Network": joblib.load('final_model5.joblib')
+    "Decision Tree": joblib.load('models/decision_tree.joblib'),
+    "Random Forest": joblib.load('models/random_forest.joblib'),
+    "XGBoost": joblib.load('models/xgboost.joblib'),
+    "K-Nearest Neighbors (KNN)": joblib.load('models/knn.joblib'),
+    "MLP Neural Network": joblib.load('models/mlp.joblib')
 }
 
 # Load training data to get the list of symptoms
-train_data = pd.read_csv('Augmented_Data.csv')
+train_data = pd.read_csv('data/Augmented_Data.csv')
 X_train = train_data.drop(columns=['prognosis'])
 symptoms = X_train.columns
 # Streamlit app
