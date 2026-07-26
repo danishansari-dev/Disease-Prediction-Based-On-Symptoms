@@ -6,12 +6,6 @@ This project focuses on developing a machine learning model to predict diseases 
 
 The project utilizes a dataset, `Augmented_Data.csv`, which contains 132 symptom columns and a target column, "Prognosis", with 41 unique diseases. The final web application, built using **Streamlit**, allows users to input symptoms and receive a predicted diagnosis.
 
-## Team Members
-
-- **Mohammad Danish Ansari (22bds039)**
-- **Mohammed Arsalan (22bds053)**
-- **Gorthi Gokul (22bds026)**
-
 ## Features
 
 - **Symptom Input**: Users can input symptoms to predict possible diseases.
@@ -32,5 +26,65 @@ Before setting up the project, ensure that you have the following installed:
 
 1. **Clone the Repository**:  
    Clone the repository to your local machine using the following command:
+
    ```bash
-   git clone https://github.com/danish9491/disease-prediction.git
+   git clone https://github.com/danishansari-dev/Disease-Prediction-Based-On-Symptoms.git
+   cd Disease-Prediction-Based-On-Symptoms
+   ```
+
+2. **Install Dependencies**:  
+   Install all required Python packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Running the Application
+
+Start the Streamlit web app:
+
+```bash
+streamlit run final_disease_prediction_app.py
+```
+
+The app will open in your browser. Select a model, choose your symptoms, and click **Predict Disease**.
+
+## Project Structure
+
+```
+Disease-Prediction-Based-On-Symptoms/
+├── final_disease_prediction_app.py   # Streamlit web application
+├── final_model1.ipynb                # Decision Tree notebook
+├── final_model2.ipynb                # Random Forest notebook
+├── final_model3.ipynb                # XGBoost notebook
+├── final_model4.ipynb                # KNN notebook
+├── final_model5.ipynb                # MLP Neural Network notebook
+├── final_model1.joblib               # Trained Decision Tree model
+├── final_model2.joblib               # Trained Random Forest model
+├── final_model3.joblib               # Trained XGBoost model
+├── final_model4.joblib               # Trained KNN model
+├── final_model5.joblib               # Trained MLP model
+├── Augmented_Data.csv                # Dataset (132 symptoms, 41 diseases)
+├── requirements.txt                  # Python dependencies
+└── README.md
+```
+
+## Models Used
+
+| # | Model | File |
+|---|-------|------|
+| 1 | Decision Tree | `final_model1.joblib` |
+| 2 | Random Forest | `final_model2.joblib` |
+| 3 | XGBoost (XGBClassifier) | `final_model3.joblib` |
+| 4 | K-Nearest Neighbors (KNN) | `final_model4.joblib` |
+| 5 | Multi-Layer Perceptron (MLP) | `final_model5.joblib` |
+
+## Dataset
+
+The dataset (`Augmented_Data.csv`) contains:
+- **132 symptom columns** (binary: 0 or 1)
+- **1 target column** (`prognosis`) with **41 unique diseases**
+
+## License
+
+This project is for educational purposes.
