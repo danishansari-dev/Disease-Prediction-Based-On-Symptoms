@@ -1,6 +1,8 @@
+# Pinning scikit-learn to 1.5.2 because models were trained with that version.
+# Using a newer version causes InconsistentVersionWarning and potential breakage.
 streamlit
 pandas
 numpy
-scikit-learn
+scikit-learn==1.5.2
 xgboost
 joblib
