@@ -1,8 +1,8 @@
-# Pinning scikit-learn to 1.5.2 because models were trained with that version.
-# Using a newer version causes InconsistentVersionWarning and potential breakage.
-streamlit
+# Pinning versions to match exactly what the models were trained with.
+# This prevents InconsistentVersionWarning and ensures reproducible predictions.
+streamlit==1.60.0
 pandas
 numpy
 scikit-learn==1.5.2
-xgboost
+xgboost==3.2.0
 joblib
