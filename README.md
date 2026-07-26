@@ -53,19 +53,23 @@ The app will open in your browser. Select a model, choose your symptoms, and cli
 
 ```
 Disease-Prediction-Based-On-Symptoms/
-├── final_disease_prediction_app.py   # Streamlit web application
-├── final_model1.ipynb                # Decision Tree notebook
-├── final_model2.ipynb                # Random Forest notebook
-├── final_model3.ipynb                # XGBoost notebook
-├── final_model4.ipynb                # KNN notebook
-├── final_model5.ipynb                # MLP Neural Network notebook
-├── final_model1.joblib               # Trained Decision Tree model
-├── final_model2.joblib               # Trained Random Forest model
-├── final_model3.joblib               # Trained XGBoost model
-├── final_model4.joblib               # Trained KNN model
-├── final_model5.joblib               # Trained MLP model
-├── Augmented_Data.csv                # Dataset (132 symptoms, 41 diseases)
-├── requirements.txt                  # Python dependencies
+├── data/
+│   └── Augmented_Data.csv                # Dataset (132 symptoms, 41 diseases)
+├── models/
+│   ├── decision_tree.joblib              # Trained Decision Tree model
+│   ├── random_forest.joblib              # Trained Random Forest model
+│   ├── xgboost.joblib                    # Trained XGBoost model
+│   ├── knn.joblib                        # Trained KNN model
+│   └── mlp.joblib                        # Trained MLP model
+├── notebooks/
+│   ├── 01_decision_tree.ipynb            # Decision Tree training notebook
+│   ├── 02_random_forest.ipynb            # Random Forest training notebook
+│   ├── 03_xgboost.ipynb                  # XGBoost training notebook
+│   ├── 04_knn.ipynb                      # KNN training notebook
+│   └── 05_mlp.ipynb                      # MLP training notebook
+├── final_disease_prediction_app.py       # Streamlit web application
+├── requirements.txt                      # Python dependencies
+├── .gitignore
 └── README.md
 ```
 
@@ -73,11 +77,11 @@ Disease-Prediction-Based-On-Symptoms/
 
 | # | Model | File |
 |---|-------|------|
-| 1 | Decision Tree | `final_model1.joblib` |
-| 2 | Random Forest | `final_model2.joblib` |
-| 3 | XGBoost (XGBClassifier) | `final_model3.joblib` |
-| 4 | K-Nearest Neighbors (KNN) | `final_model4.joblib` |
-| 5 | Multi-Layer Perceptron (MLP) | `final_model5.joblib` |
+| 1 | Decision Tree | `models/decision_tree.joblib` |
+| 2 | Random Forest | `models/random_forest.joblib` |
+| 3 | XGBoost (XGBClassifier) | `models/xgboost.joblib` |
+| 4 | K-Nearest Neighbors (KNN) | `models/knn.joblib` |
+| 5 | Multi-Layer Perceptron (MLP) | `models/mlp.joblib` |
 
 ## Dataset
 
