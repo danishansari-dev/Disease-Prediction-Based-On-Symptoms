@@ -35,3 +35,11 @@ build/
 .env
 
 docs/
+
+# Why these paths are ignored:
+# Real clinical datasets and their derived cohorts may be governed by a data-use agreement.
+# They must remain outside version control even after direct identifiers have been removed.
+data/raw/
+data/interim/
+data/processed/
+artifacts/
