@@ -1,5 +1,7 @@
-# Submittion folder (reports, video, PPT - not needed on GitHub)
+# Submission folder (reports, video, PPT - not needed on GitHub)
 Submittion/
+Submission/
+
 
 # Python bytecode
 __pycache__/
@@ -31,3 +33,5 @@ build/
 
 # Environment variables
 .env
+
+docs/
